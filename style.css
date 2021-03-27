@@ -47,7 +47,7 @@ body {
   padding: 0px;
 }
 
-.list-items,
+.list__item,
 .h3-style {
   list-style: none;
 }
@@ -115,7 +115,7 @@ input#new-task {
 }
 
 /* Task list */
-.list-items {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -124,36 +124,36 @@ input#new-task {
   align-items: center;
 }
 
-.list-items > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-.list-items > input[type="checkbox"] {
+.list__item > input[type="checkbox"] {
   margin: 0 10px;
 }
 
-.list-items > label {
+.list__item > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-items > input[type="text"] {
+.list__item > input[type="text"] {
   width: 226px;
 }
 
-.list-items > .btn.delete:hover {
+.list__item > .btn.list__item_delete:hover {
   color: #cf2323;
 }
 
-.btn.delete img {
+.btn.list__item_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn.delete img:hover {
+.btn.list__item_delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -164,15 +164,15 @@ input#new-task {
 }
 
 /* Edit Task */
-.list .list-items input[type="text"] {
+.list .list__item input[type="text"] {
   display: none;
 }
 
-.list .list-items.edit-mode input[type="text"] {
+.list .list__item.edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.list .list-items.edit-mode label {
+.list .list__item.edit-mode label {
   display: none;
 }
